@@ -17,4 +17,4 @@
 
 8: mysql -uroot -p -hlocalhost 然后输入密码检测是否设置成功
 
-9: grant all privileges on *.* to root@'%'identified by '123456'; 设置远程登录，去防火墙放开端口即可， 一般是3306
+9: GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION; 设置远程登录，去防火墙放开端口即可， 一般是3306
